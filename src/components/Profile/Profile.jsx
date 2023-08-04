@@ -1,4 +1,4 @@
-import { ProfileCard } from './ProfileCard';
+import { ProfileCard } from '../ProfileCard/ProfileCard';
 
 export const Profile = ({ items }) => {
   // console.log(items)

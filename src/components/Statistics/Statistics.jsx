@@ -1,4 +1,4 @@
-import { StatisticCard } from "./StatisticCard"
+import { StatisticCard } from "../StatisticsCard/StatisticCard"
 
 export const Statistics = ({ items }) => {
    // console.log(items)

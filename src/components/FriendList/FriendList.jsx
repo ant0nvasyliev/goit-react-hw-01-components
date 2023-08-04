@@ -1,4 +1,4 @@
-import { FriendCard } from "./FriendCard";
+import { FriendCard } from "../FriendCard/FriendCard";
 
 export const FriendList = ({ items }) => {
    return ( <>

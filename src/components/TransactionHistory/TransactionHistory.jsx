@@ -1,4 +1,4 @@
-import { TransactionCard } from "./TransactionCard"
+import { TransactionCard } from "../TransactionCard/TransactionCard"
 
 export const TransactionList = ({items}) => {
    // console.log(props.items)
