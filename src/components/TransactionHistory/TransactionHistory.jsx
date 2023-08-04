@@ -3,7 +3,7 @@ import { TransactionCard } from "./TransactionCard"
 export const TransactionList = ({items}) => {
    // console.log(props.items)
    return (
-      <div>
+      <>
          <table className="transaction-history">
             <thead>
                <tr>
@@ -19,6 +19,6 @@ export const TransactionList = ({items}) => {
                </tr>)}
             </tbody>
          </table>   
-      </div>
+      </>
    )
 }
