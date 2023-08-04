@@ -6,8 +6,19 @@ font-weight: 500;
 `;
 
 export const FriendStatus = styled.span`
+display: block;
 width: 12px;
 height: 12px;
-background-color: red;
+background-color: ${props => {
+   switch (props.$isonline) {
+      case 'true':
+         return 'green';
+      case 'false':
+         return 'red';
+      default:
+         return 'yellow';
+   }
+}}
+;
 border-radius: 50%;
 `;
