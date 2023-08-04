@@ -1,3 +1,12 @@
+import {
+  CardImage,
+  CardDescrWrapper,
+  ProfileName,
+  ProfileInfo,
+  ActivitiesWrapper,
+  ActivitiesItem,
+} from './ProfileCard.styled';
+
 export const ProfileCard = ({
   item: {
     username,
@@ -10,27 +19,27 @@ export const ProfileCard = ({
   return (
     <>
       <div className="profile">
-        <div className="description">
-          <img src={avatar} alt="User avatar" className="avatar" />
-          <p className="name">{username}</p>
-          <p className="tag">{tag}</p>
-          <p className="location">{location}</p>
-        </div>
+        <CardDescrWrapper className="description">
+          <CardImage src={avatar} alt="User avatar" className="avatar" />
+          <ProfileName className="name">{username}</ProfileName>
+          <ProfileInfo className="tag">{tag}</ProfileInfo>
+          <ProfileInfo className="location">{location}</ProfileInfo>
+        </CardDescrWrapper>
 
-        <ul className="stats">
-          <li>
+        <ActivitiesWrapper className="stats">
+          <ActivitiesItem>
             <span className="label">Followers</span>
             <span className="quantity">{followers}</span>
-          </li>
-          <li>
+          </ActivitiesItem>
+          <ActivitiesItem>
             <span className="label">Views</span>
             <span className="quantity">{views}</span>
-          </li>
-          <li>
+          </ActivitiesItem>
+          <ActivitiesItem>
             <span className="label">Likes</span>
             <span className="quantity">{likes}</span>
-          </li>
-        </ul>
+          </ActivitiesItem>
+        </ActivitiesWrapper>
       </div>
     </>
   );

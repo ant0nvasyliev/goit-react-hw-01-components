@@ -1,9 +1,11 @@
+import {FriendStatus, FriendName} from '../FriendCard/FriendCard.styled';
+
 export const FriendCard = ({ item: {isOnline, avatar, name} }) => {
    return (
       <>
-         <span className="status">{isOnline}</span>
+         <FriendStatus className="status">{isOnline}</FriendStatus>
          <img className="avatar" src={avatar} alt="User avatar" width="48" />
-         <p className="name">{name}</p>
+         <FriendName className="name">{name}</FriendName>
       </>
    );
 };

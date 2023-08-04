@@ -1,22 +1,20 @@
-import { StatisticCard } from "../StatisticsCard/StatisticCard"
+import { StatisticCard } from '../StatisticsCard/StatisticCard';
+import { UploadWrapper, UploadTitle, StatsContainer, StatsItem } from '../Statistics/Statistics.styled';
 
 export const Statistics = ({ items }) => {
-   // console.log(items)
+  // console.log(items)
    return (
-      <>
-         <section className="statistics">
-            <h2 className="title">Upload stats</h2>
-            <ul className="stat-list">
-               {items.map(item => (
-               <li key={item.id} className="item">
-                  <StatisticCard item={item} />
-               </li>
-               ))}
-            </ul>
-         </section>
+   <>
+      <UploadWrapper className="statistics">
+         <UploadTitle className="title">Upload stats</UploadTitle>
+         <StatsContainer className="stat-list">
+            {items.map(item => (
+            <StatsItem key={item.id} className="item">
+               <StatisticCard item={item} />
+            </StatsItem>
+            ))}
+         </StatsContainer>
+      </UploadWrapper>
       </>
-   )
-} 
-
-
-
+   );
+};
