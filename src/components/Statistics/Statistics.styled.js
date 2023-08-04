@@ -4,7 +4,7 @@ export const UploadWrapper = styled.section`
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 450px;
+   max-width: 450px;
    border: 1px solid purple;
    border-radius: 8px;
    margin: 0 auto;
@@ -25,9 +25,8 @@ display: flex;
 export const StatsItem = styled.li`
 display: flex;
 flex-direction: column;
-padding: 20px;
+padding: 10px;
 align-items: center;
 gap: 10px;
 border-top: 1px solid purple;
-/* background-color: yellow; */
 `;
