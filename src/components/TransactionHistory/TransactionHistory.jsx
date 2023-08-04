@@ -1,24 +1,25 @@
 import { TransactionCard } from "../TransactionCard/TransactionCard"
+import {TransactionHeader, TableWrapper, TableCellsColor} from '../TransactionHistory/TransactionHistory.styled'
 
 export const TransactionList = ({items}) => {
    // console.log(props.items)
    return (
       <>
-         <table className="transaction-history">
+         <TableWrapper className="transaction-history">
             <thead>
                <tr>
-                  <th>Type</th>
-                  <th>Amount</th>
-                  <th>Currency</th>
+                  <TransactionHeader>Type</TransactionHeader>
+                  <TransactionHeader>Amount</TransactionHeader>
+                  <TransactionHeader>Currency</TransactionHeader>
                </tr>
             </thead>
-            <tbody>
+            <TableCellsColor>
             {items.map(item =>
                <tr key={item.id}>
                   <TransactionCard item={item} />
                </tr>)}
-            </tbody>
-         </table>   
+            </TableCellsColor>
+         </TableWrapper>   
       </>
    )
 }

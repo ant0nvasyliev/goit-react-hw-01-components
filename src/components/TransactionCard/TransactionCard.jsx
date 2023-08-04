@@ -1,7 +1,9 @@
+import {TableCells} from '../TransactionCard/TransactionCard.styled'
+
 export const TransactionCard = ({ item: {type, amount, currency}}) => {
    return <>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <TableCells>{type}</TableCells>
+            <TableCells>{amount}</TableCells>
+            <TableCells>{currency}</TableCells>
          </>
 }
