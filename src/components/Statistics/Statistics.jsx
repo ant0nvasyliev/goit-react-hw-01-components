@@ -1,12 +1,12 @@
 import { StatisticCard } from '../StatisticsCard/StatisticCard';
 import { UploadWrapper, UploadTitle, StatsContainer, StatsItem } from '../Statistics/Statistics.styled';
 
-export const Statistics = ({ items }) => {
+export const Statistics = ({ items, title }) => {
   // console.log(items)
    return (
    <>
       <UploadWrapper className="statistics">
-         <UploadTitle className="title">Upload stats</UploadTitle>
+         {title && <UploadTitle className="title">{title}</UploadTitle>}
          <StatsContainer className="stat-list">
             {items.map(item => (
             <StatsItem key={item.id} className="item">

@@ -9,6 +9,7 @@ export const FriendStatus = styled.span`
 display: block;
 width: 12px;
 height: 12px;
+border-radius: 50%;
 background-color: ${props => {
    switch (props.$isonline) {
       case 'true':
@@ -18,7 +19,5 @@ background-color: ${props => {
       default:
          return 'yellow';
    }
-}}
-;
-border-radius: 50%;
+}};
 `;

@@ -16,6 +16,7 @@ export const UploadTitle = styled.h2`
 padding: 15px;
 font-size: 30px;
 font-weight: 500;
+border-bottom: 1px solid purple;
 `;
 
 export const StatsContainer = styled.ul`
@@ -28,5 +29,4 @@ flex-direction: column;
 padding: 10px;
 align-items: center;
 gap: 10px;
-border-top: 1px solid purple;
 `;

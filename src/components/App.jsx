@@ -13,7 +13,8 @@ export const App = () => {
     <>
       <GlobalStyle />
       <Profile items={profileUserData} />
-      <Statistics items={statisticsData} />
+      {/* якщо title буде пустим, тег h2 взагалі не буде рендеритись */}
+      <Statistics items={statisticsData} title={"Upload stats"}/> 
       <FriendList items={friendListData} />
       <TransactionList items={transactionListData} />
     </>
